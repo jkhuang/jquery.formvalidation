@@ -1,0 +1,61 @@
+/* styles for validation form demo */
+#signup-form {
+    background-color: #F8FDEF;
+    border: 1px solid #8A8374;
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 25px 50px 10px;
+    width: 350px;
+}
+
+#signup-form .fieldgroup {
+    display: inline-block;
+    padding: 8px 10px;
+    width: 340px;
+}
+
+#signup-form .fieldgroup label {
+    float: left;
+    padding: 15px 0 0;
+    text-align: right;
+    width: 160px;
+}
+
+#signup-form .fieldgroup input, #signup-form .fieldgroup textarea, #signup-form .fieldgroup select {
+    float: right;
+    margin: 10px 0;
+    height: 25px;
+}
+
+#signup-form .submit {
+    padding: 10px;
+    width: 120px;
+    height: 40px !important;
+}
+
+#signup-form .fieldgroup .errorlist {
+    color: #FB3A3A;
+    display: inline-block;
+    margin: 4px 0 5px 125px;
+    padding: 0;
+    text-align: left;
+    width: 220px;
+}
+
+.error input {
+    border: 1px solid red;
+}
+
+label.error {
+    font-size: 11px;
+    margin-left: 60px;
+    background: #fbfcda url('../img/cancel.png') no-repeat left;
+    border: 1px solid #dbdbd3;
+    width: 209px;;
+    margin-top: 4px;
+    padding-left: 20px;
+}
+

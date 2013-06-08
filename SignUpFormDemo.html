@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>SignUp Form</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.formvalidation.js"></script>
+    <link href="css/Form.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="validation-demo">
+    <!-- Start Sign Up Form -->
+    <form action="#signup-form" id="signup-form">
+        <h2>
+            Sign Up</h2>
+        <fieldset>
+            <div class="fieldgroup">
+                <label for="name">
+                    Name</label>
+                <input type="text" name="name" validation="required"/>
+            </div>
+            <div class="fieldgroup">
+                <label for="email">
+                    Email</label>
+                <input type="text" name="email" validation="email"/>
+            </div>
+            <div class="fieldgroup">
+                <label for="password">
+                    Password</label>
+                <input type="text" name="password" validation="password"/>
+            </div>
+            <div class="fieldgroup">
+                <label for="weibo">
+                    Weibo</label>
+                <input type="text" name="weibo" validation="url"/>
+            </div>
+
+            <div class="fieldgroup">
+                <input type="submit" class="submit" value="Sign up">
+            </div>
+        </fieldset>
+
+        <div class="fieldgroup">
+            <p>Already registered? <a href="http://www.cnblogs.com/rush">Sign in</a>.</p>
+        </div>
+    </form>
+    <!-- End Sign Up Form -->
+</div>
+<script>
+    $(function() { // jQuery DOM ready function.
+
+        // Get the form object.
+        var signUpForm = $("#signup-form");
+
+        // Invokes the validation method.
+        signUpForm.validation();
+    });
+</script>
+</body>
+</html>
